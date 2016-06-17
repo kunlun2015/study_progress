@@ -1,0 +1,12 @@
+{{message}}
+<ul>
+    <li ng-repeat="v in items">
+        姓名：{{v.name}}
+    </li>
+</ul>
+<ul>
+    <li ng-repeat="v in weeks" week="{{v}}" ng-click="option($event)">
+       {{v}}
+    </li>
+</ul>
+<div class="click-me" ng-click="getData($event)" totalPage="{{totalPage}}" curPage="{{curPage || 0}}">click Me</div>
